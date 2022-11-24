@@ -1,0 +1,133 @@
+.calendar-main {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 0.8rem;
+
+  &__day-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-grey-light-2;
+    border-radius: 0.8rem;
+    height: 4rem;
+    align-self: start;
+    @include table-header-typography;
+  }
+
+  &__text {
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  &__day-box {
+    position: relative;
+    padding: 1.2rem 1.6rem 0 1.2rem;
+    border: 1px solid $color-grey-light-1;
+    border-radius: 0.6rem;
+    aspect-ratio: 1 / 1;
+
+    &__heading-text{
+      &--another-month{
+        color: $color-grey-2;
+      }
+
+    }
+
+    &--with-activities {
+      &:hover {
+        background-color: $color-grey-light-2;
+        cursor: pointer;
+
+        .calendar-main__day-box__date-select-icon {
+          display: initial;
+        }
+      }
+    }
+    &__date-select-icon {
+      display: none;
+      position: absolute;
+      bottom: 1.5rem;
+      right: 1.6rem;
+    }
+
+    &__header {
+      padding: 0 0.4rem;
+    }
+  }
+  &__basic-event {
+    padding: 0 0.8rem;
+    &__header {
+      margin-top: 2rem;
+      color: $calendar-basic-event-header-color;
+    }
+    &__text {
+    }
+  }
+  &__primary-event {
+    &--big {
+      margin-top: 1.2rem;
+      padding: 0.8rem 0.8rem 1.2rem 0.8rem;
+      background-color: $color-coral;
+      color: $color-white;
+      border-radius: 0.6rem;
+      &__header {
+        margin-bottom: 0.4rem;
+      }
+    }
+
+    &--small {
+      padding: 0.3rem 0.8rem 0.3rem 0.8rem;
+      background-color: $color-coral;
+      color: $color-white;
+      border-radius: 0.6rem;
+
+      &__header {
+        display: inline-block;
+        margin-right: 0.8rem;
+      }
+
+      &__text {
+        display: inline-block;
+      }
+
+      &:nth-child(2n + 1) {
+        margin-bottom: 0.4rem;
+      }
+
+      &:last-child {
+        margin: 0;
+      }
+    }
+  }
+  &__primary-event-box--small {
+    margin-top: 1.2rem;
+  }
+}
+
+@include respond(tab-land) {
+  .calendar-main {
+    [class*="event"] {
+      display: none;
+    }
+  }
+}
+
+@include respond(mobile) {
+  .calendar-main {
+    &__day-box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0;
+      border-radius: 100%;
+      text-align: center;
+      &__header {
+        padding: 0;
+      }
+    }
+    &__day-title {
+      border-radius: 100%;
+      background: none;
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.sidebar {
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 8rem;
+  height: 100vh;
+  padding: 3.2rem 0 2.4rem;
+  background-color: $color-black;
+  overflow-y: auto;
+  overflow-x: hidden;
+  &--top {
+    margin-bottom: 2.4rem;
+  }
+
+  &--top,
+  &--bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 2.4rem;
+  }
+
+  &__button {
+    @include round-box;
+    &--active {
+      background-color: $color-green-light;
+    }
+
+    &--active svg {
+      stroke: $color-black;
+    }
+
+    &--active path {
+      fill: $color-black;
+    }
+
+    &--home {
+      color: $color-green-light;
+    }
+
+    &--notify::after {
+      @include round-box-notify-after;
+    }
+  }
+
+  &__hr {
+    display: block;
+    width: 4rem;
+    height: 1px;
+    background-color: $color-grey-dark;
+    border: none;
+  }
+
+  &__icon {
+    stroke: $color-grey-2;
+  }
+
+  &:hover {
+    &::-webkit-scrollbar {
+      display: initial;
+    }
+
+    @include scrollbar($color-black);
+  }
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}

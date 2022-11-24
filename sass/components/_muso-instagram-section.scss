@@ -1,0 +1,76 @@
+.muso-instagram-section {
+  &__header {
+    margin-bottom: 1.6rem;
+  }
+
+  &__heading-box {
+    display: flex;
+    align-items: center;
+    column-gap: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  &-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 12.5rem);
+    grid-gap: 1px;
+
+    &__image {
+      height: 100%;
+    }
+
+    &__image-box {
+      position: relative;
+    }
+
+    &__play-icon,
+    &__carousel-icon {
+      position: absolute;
+      right: 0.8rem;
+      top: 0.8rem;
+    }
+  }
+}
+.muso-instagram-username {
+  font-family: "SF Pro Display", sans-serif;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.148rem;
+}
+
+.muso-instagram-logo--border {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.2rem;
+  height: 5.2rem;
+  border-radius: 100%;
+  z-index: 1;
+  background-image: radial-gradient(
+    circle at top left,
+    $instagram-logo-border-gradient-color-1,
+    $instagram-logo-border-gradient-color-2
+  );
+
+  &__logo-img {
+    border-radius: 100%;
+    border: solid 1px $color-white;
+    width: 4.3rem;
+    height: 4.3rem;
+    z-index: 10;
+  }
+}
+
+@include respond(tab-land) {
+  .muso-instagram-section-gallery {
+    grid-template-columns: repeat(3, 1fr);
+    &__image {
+      width: 100%;
+      height: 100%;
+    }
+    &__image-box {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

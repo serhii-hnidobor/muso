@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Gigit</title>
+  <!-- Metadata -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./sass/main.css">
+</head>
+
+<body class="muso-details-page">
+  <div class="sidebar">
+    <div class="sidebar--top">
+      <button class="sidebar__button sidebar__button--home">
+        <span class="logo">G</span>
+      </button>
+      <hr class="sidebar__hr">
+      <button class="sidebar__button">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+          class="sidebar__icon">
+          <path
+            d="M14 1C14 0.447715 13.5523 0 13 0C12.4477 0 12 0.447715 12 1H14ZM12 5C12 5.55228 12.4477 6 13 6C13.5523 6 14 5.55228 14 5H12ZM6 1C6 0.447715 5.55228 0 5 0C4.44772 0 4 0.447715 4 1H6ZM4 5C4 5.55228 4.44772 6 5 6C5.55228 6 6 5.55228 6 5H4ZM1 8C0.447715 8 0 8.44772 0 9C0 9.55229 0.447715 10 1 10V8ZM17 10C17.5523 10 18 9.55229 18 9C18 8.44772 17.5523 8 17 8V10ZM3 4H15V2H3V4ZM15 4C15.5523 4 16 4.44772 16 5H18C18 3.34315 16.6569 2 15 2V4ZM16 5V17H18V5H16ZM16 17C16 17.5523 15.5523 18 15 18V20C16.6569 20 18 18.6569 18 17H16ZM15 18H3V20H15V18ZM3 18C2.44772 18 2 17.5523 2 17H0C0 18.6569 1.34315 20 3 20V18ZM2 17V5H0V17H2ZM2 5C2 4.44772 2.44772 4 3 4V2C1.34315 2 0 3.34315 0 5H2ZM12 1V5H14V1H12ZM4 1V5H6V1H4ZM1 10H17V8H1V10Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+      <button class="sidebar__button">
+        <svg class="sidebar__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7 1V0C6.44772 0 6 0.447715 6 1L7 1ZM17 1H18C18 0.447715 17.5523 0 17 0V1ZM7 4C6.44772 4 6 4.44772 6 5C6 5.55228 6.44772 6 7 6V4ZM17 6C17.5523 6 18 5.55228 18 5C18 4.44772 17.5523 4 17 4V6ZM6 14C6 15.1046 5.10457 16 4 16V18C6.20914 18 8 16.2091 8 14H6ZM4 16C2.89543 16 2 15.1046 2 14H0C0 16.2091 1.79086 18 4 18V16ZM2 14C2 12.8954 2.89543 12 4 12V10C1.79086 10 0 11.7909 0 14H2ZM4 12C5.10457 12 6 12.8954 6 14H8C8 11.7909 6.20914 10 4 10V12ZM16 14C16 15.1046 15.1046 16 14 16V18C16.2091 18 18 16.2091 18 14H16ZM14 16C12.8954 16 12 15.1046 12 14H10C10 16.2091 11.7909 18 14 18V16ZM12 14C12 12.8954 12.8954 12 14 12V10C11.7909 10 10 11.7909 10 14H12ZM14 12C15.1046 12 16 12.8954 16 14H18C18 11.7909 16.2091 10 14 10V12ZM8 14V1H6V14H8ZM7 2H17V0H7V2ZM16 1V14H18V1H16ZM7 6H17V4H7V6Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+      <button class="sidebar__button">
+        <svg class="sidebar__icon" width="22" height="21" viewBox="0 0 22 21" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.9998 16.75L11.466 15.8653C11.1745 15.7117 10.8261 15.7115 10.5345 15.8648L10.9998 16.75ZM4.82784 19.995L3.84223 19.8259C3.77787 20.2011 3.9321 20.5802 4.24005 20.804C4.548 21.0277 4.95628 21.0572 5.2932 20.8801L4.82784 19.995ZM6.00684 13.122L6.99244 13.291C7.04813 12.9664 6.94038 12.6351 6.70435 12.4054L6.00684 13.122ZM1.00684 8.25495L0.863407 7.26529C0.486509 7.31992 0.173355 7.58388 0.0557293 7.94609C-0.0618966 8.30831 0.0364276 8.70589 0.309324 8.97153L1.00684 8.25495ZM7.90684 7.25495L8.05026 8.24461C8.37612 8.19739 8.65785 7.99278 8.80357 7.69751L7.90684 7.25495ZM10.9928 1.00195L11.8896 0.559392C11.7211 0.218054 11.3735 0.00195312 10.9928 0.00195312C10.6122 0.00195312 10.2646 0.218054 10.0961 0.559392L10.9928 1.00195ZM14.0788 7.25495L13.1821 7.69751C13.3278 7.99278 13.6095 8.19739 13.9354 8.24461L14.0788 7.25495ZM20.9788 8.25495L21.6763 8.97153C21.9492 8.70589 22.0476 8.30831 21.9299 7.94609C21.8123 7.58388 21.4992 7.31992 21.1223 7.26529L20.9788 8.25495ZM15.9788 13.122L15.2813 12.4054C15.0453 12.6351 14.9375 12.9664 14.9932 13.291L15.9788 13.122ZM17.1578 19.995L16.6916 20.8796C17.0286 21.0572 17.437 21.0279 17.7452 20.8042C18.0534 20.5805 18.2078 20.2012 18.1434 19.8259L17.1578 19.995ZM10.5345 15.8648L4.36247 19.1098L5.2932 20.8801L11.4652 17.6351L10.5345 15.8648ZM5.81344 20.164L6.99244 13.291L5.02123 12.9529L3.84223 19.8259L5.81344 20.164ZM6.70435 12.4054L1.70435 7.53838L0.309324 8.97153L5.30932 13.8385L6.70435 12.4054ZM1.15027 9.24461L8.05026 8.24461L7.76341 6.26529L0.863407 7.26529L1.15027 9.24461ZM8.80357 7.69751L11.8896 1.44451L10.0961 0.559392L7.0101 6.81239L8.80357 7.69751ZM10.0961 1.44451L13.1821 7.69751L14.9756 6.81239L11.8896 0.559392L10.0961 1.44451ZM13.9354 8.24461L20.8354 9.24461L21.1223 7.26529L14.2223 6.26529L13.9354 8.24461ZM20.2813 7.53838L15.2813 12.4054L16.6763 13.8385L21.6763 8.97153L20.2813 7.53838ZM14.9932 13.291L16.1722 20.164L18.1434 19.8259L16.9644 12.9529L14.9932 13.291ZM17.624 19.1103L11.466 15.8653L10.5336 17.6346L16.6916 20.8796L17.624 19.1103Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+      <button class="sidebar__button">
+        <svg class="sidebar__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M19 12L18.2929 12.7071C18.5789 12.9931 19.009 13.0787 19.3827 12.9239C19.7564 12.7691 20 12.4045 20 12H19ZM16 9L16.7071 8.29289C16.5196 8.10536 16.2652 8 16 8V9ZM9 1V0V1ZM18 1V0V1ZM13 13C13 12.4477 12.5523 12 12 12C11.4477 12 11 12.4477 11 13H13ZM4 16V15C3.73478 15 3.48043 15.1054 3.29289 15.2929L4 16ZM1 19H0C0 19.4045 0.243642 19.7691 0.617317 19.9239C0.990991 20.0787 1.42111 19.9931 1.70711 19.7071L1 19ZM4 9C4.55228 9 5 8.55228 5 8C5 7.44772 4.55228 7 4 7V9ZM19.7071 11.2929L16.7071 8.29289L15.2929 9.70711L18.2929 12.7071L19.7071 11.2929ZM16 8H9V10H16V8ZM9 8L7.58579 9.41421C7.96086 9.78929 8.46957 10 9 10V8ZM9 8H7C7 8.53043 7.21071 9.03914 7.58579 9.41421L9 8ZM9 8V2H7V8H9ZM9 2V2L7.58579 0.585786C7.21071 0.960859 7 1.46957 7 2H9ZM9 2V2V0C8.46957 0 7.96086 0.210714 7.58579 0.585786L9 2ZM9 2H18V0H9V2ZM18 2V2L19.4142 0.585786C19.0391 0.210713 18.5304 0 18 0V2ZM18 2V2H20C20 1.46957 19.7893 0.960861 19.4142 0.585786L18 2ZM18 2V12H20V2H18ZM11 13V15H13V13H11ZM11 15V15L12.4142 16.4142C12.7893 16.0391 13 15.5304 13 15H11ZM11 15V15V17C11.5304 17 12.0391 16.7893 12.4142 16.4142L11 15ZM11 15H4V17H11V15ZM3.29289 15.2929L0.292893 18.2929L1.70711 19.7071L4.70711 16.7071L3.29289 15.2929ZM2 19V9H0V19H2ZM2 9H2L0.585786 7.58579C0.210714 7.96086 0 8.46957 0 9H2ZM2 9H2V7C1.46957 7 0.960859 7.21071 0.585786 7.58579L2 9ZM2 9H4V7H2V9Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+      <button class="sidebar__button">
+        <svg width="16" height="20" viewBox="0 0 16 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10 1L10.7071 0.292893C10.5196 0.105357 10.2652 0 10 0V1ZM15 6H16C16 5.73478 15.8946 5.48043 15.7071 5.29289L15 6ZM1 17H0H1ZM3 1V0V1ZM5 4C4.44772 4 4 4.44772 4 5C4 5.55228 4.44772 6 5 6V4ZM6 6C6.55228 6 7 5.55228 7 5C7 4.44772 6.55228 4 6 4V6ZM5 10C4.44772 10 4 10.4477 4 11C4 11.5523 4.44772 12 5 12V10ZM11 12C11.5523 12 12 11.5523 12 11C12 10.4477 11.5523 10 11 10V12ZM9 14C8.44772 14 8 14.4477 8 15C8 15.5523 8.44772 16 9 16V14ZM11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14V16ZM9 1V5H11V1H9ZM9 5C9 5.53043 9.21071 6.03914 9.58579 6.41421L11 5V5H9ZM9.58579 6.41421C9.96086 6.78929 10.4696 7 11 7V5V5L9.58579 6.41421ZM11 7H15V5H11V7ZM13 18H3V20H13V18ZM3 18C2.73478 18 2.48043 17.8946 2.29289 17.7071L0.87868 19.1213C1.44129 19.6839 2.20435 20 3 20V18ZM2.29289 17.7071C2.10536 17.5196 2 17.2652 2 17H0C0 17.7957 0.31607 18.5587 0.87868 19.1213L2.29289 17.7071ZM2 17V3H0V17H2ZM2 3C2 2.73478 2.10536 2.48043 2.29289 2.29289L0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3H2ZM2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2V0C2.20435 0 1.44129 0.31607 0.87868 0.87868L2.29289 2.29289ZM3 2H10V0H3V2ZM9.29289 1.70711L14.2929 6.70711L15.7071 5.29289L10.7071 0.292893L9.29289 1.70711ZM14 6V17H16V6H14ZM14 17C14 17.2652 13.8946 17.5196 13.7071 17.7071L15.1213 19.1213C15.6839 18.5587 16 17.7957 16 17H14ZM13.7071 17.7071C13.5196 17.8946 13.2652 18 13 18V20C13.7957 20 14.5587 19.6839 15.1213 19.1213L13.7071 17.7071ZM5 6H6V4H5V6ZM5 12H11V10H5V12ZM9 16H11V14H9V16Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+    </div>
+    <div class="sidebar--bottom">
+      <button class="sidebar__button">
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M7 3L7.42747 3.90403C7.77705 3.73873 8 3.38669 8 3H7ZM9 1V0V1ZM11 3H10C10 3.38669 10.2229 3.73873 10.5725 3.90403L11 3ZM15 9H16C16 8.98436 15.9996 8.96873 15.9989 8.95311L15 9ZM15 12H14C14 12.0402 14.0024 12.0803 14.0072 12.1202L15 12ZM17 15V16C17.4542 16 17.8513 15.694 17.967 15.2548C18.0827 14.8156 17.8879 14.3536 17.4928 14.1298L17 15ZM1 15L0.507247 14.1298C0.112053 14.3536 -0.0827104 14.8156 0.0330023 15.2548C0.148715 15.694 0.545842 16 1 16V15ZM3 12L3.99275 12.1202C3.99758 12.0803 4 12.0402 4 12H3ZM3 9L2.0011 8.95311C2.00037 8.96873 2 8.98436 2 9H3ZM7 15C7 14.4477 6.55228 14 6 14C5.44772 14 5 14.4477 5 15H7ZM9 19V20V19ZM13 15C13 14.4477 12.5523 14 12 14C11.4477 14 11 14.4477 11 15H13ZM8 3C8 2.73478 8.10536 2.48043 8.29289 2.29289L6.87868 0.87868C6.31607 1.44129 6 2.20435 6 3H8ZM8.29289 2.29289C8.48043 2.10536 8.73478 2 9 2V0C8.20435 0 7.44129 0.31607 6.87868 0.87868L8.29289 2.29289ZM9 2C9.26522 2 9.51957 2.10536 9.70711 2.29289L11.1213 0.87868C10.5587 0.31607 9.79565 0 9 0V2ZM9.70711 2.29289C9.89464 2.48043 10 2.73478 10 3H12C12 2.20435 11.6839 1.44129 11.1213 0.87868L9.70711 2.29289ZM10.5725 3.90403C11.5569 4.36948 12.396 5.09402 13 6L14.6641 4.8906C13.8588 3.68263 12.7399 2.71657 11.4275 2.09597L10.5725 3.90403ZM13 6C13.604 6.90598 13.95 7.95923 14.0011 9.04689L15.9989 8.95311C15.9308 7.50291 15.4694 6.09857 14.6641 4.8906L13 6ZM14 9V12H16V9H14ZM14.0072 12.1202C14.1013 12.8973 14.3765 13.6415 14.8108 14.2928L16.4749 13.1834C16.2143 12.7926 16.0492 12.3461 15.9928 11.8798L14.0072 12.1202ZM14.8108 14.2928C15.245 14.9442 15.8261 15.4844 16.5072 15.8702L17.4928 14.1298C17.084 13.8984 16.7354 13.5742 16.4749 13.1834L14.8108 14.2928ZM17 14H1V16H17V14ZM1.49275 15.8702C2.17393 15.4844 2.75502 14.9442 3.18924 14.2928L1.52514 13.1834C1.2646 13.5742 0.91595 13.8984 0.507247 14.1298L1.49275 15.8702ZM3.18924 14.2928C3.62346 13.6415 3.89868 12.8973 3.99275 12.1202L2.00725 11.8798C1.95081 12.3461 1.78567 12.7926 1.52514 13.1834L3.18924 14.2928ZM4 12V9H2V12H4ZM3.9989 9.04689C4.04995 7.95923 4.39602 6.90598 5 6L3.3359 4.8906C2.53059 6.09857 2.06917 7.50291 2.0011 8.95311L3.9989 9.04689ZM5 6C5.60398 5.09402 6.44312 4.36948 7.42747 3.90403L6.57253 2.09597C5.26006 2.71657 4.14121 3.68263 3.3359 4.8906L5 6ZM5 15V16H7V15H5ZM5 16C5 17.0609 5.42143 18.0783 6.17157 18.8284L7.58579 17.4142C7.21071 17.0391 7 16.5304 7 16H5ZM6.17157 18.8284C6.92172 19.5786 7.93913 20 9 20V18C8.46957 18 7.96086 17.7893 7.58579 17.4142L6.17157 18.8284ZM9 20C10.0609 20 11.0783 19.5786 11.8284 18.8284L10.4142 17.4142C10.0391 17.7893 9.53043 18 9 18V20ZM11.8284 18.8284C12.5786 18.0783 13 17.0609 13 16H11C11 16.5304 10.7893 17.0391 10.4142 17.4142L11.8284 18.8284ZM13 16V15H11V16H13Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+      <button class="sidebar__button">
+        <svg width="14" height="20" viewBox="0 0 14 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M0 19C0 19.5523 0.447715 20 1 20C1.55228 20 2 19.5523 2 19H0ZM5 13V12V13ZM9 13V12V13ZM12 19C12 19.5523 12.4477 20 13 20C13.5523 20 14 19.5523 14 19H12ZM10 5C10 6.65685 8.65685 8 7 8V10C9.76142 10 12 7.76142 12 5H10ZM7 8C5.34315 8 4 6.65685 4 5H2C2 7.76142 4.23858 10 7 10V8ZM4 5C4 3.34315 5.34315 2 7 2V0C4.23858 0 2 2.23858 2 5H4ZM7 2C8.65685 2 10 3.34315 10 5H12C12 2.23858 9.76142 0 7 0V2ZM2 19V17H0V19H2ZM2 17C2 16.2044 2.31607 15.4413 2.87868 14.8787L1.46447 13.4645C0.526784 14.4021 0 15.6739 0 17H2ZM2.87868 14.8787C3.44129 14.3161 4.20435 14 5 14V12C3.67392 12 2.40215 12.5268 1.46447 13.4645L2.87868 14.8787ZM5 14H9V12H5V14ZM9 14C9.79565 14 10.5587 14.3161 11.1213 14.8787L12.5355 13.4645C11.5979 12.5268 10.3261 12 9 12V14ZM11.1213 14.8787C11.6839 15.4413 12 16.2044 12 17H14C14 15.6739 13.4732 14.4021 12.5355 13.4645L11.1213 14.8787ZM12 17V19H14V17H12Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+      <hr class="sidebar__hr">
+      <button class="sidebar__button">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17 9L17.7071 9.70711C18.0976 9.31658 18.0976 8.68342 17.7071 8.29289L17 9ZM7 8C6.44772 8 6 8.44772 6 9C6 9.55229 6.44772 10 7 10V8ZM12.2929 12.2929C11.9024 12.6834 11.9024 13.3166 12.2929 13.7071C12.6834 14.0976 13.3166 14.0976 13.7071 13.7071L12.2929 12.2929ZM13.7071 4.29289C13.3166 3.90237 12.6834 3.90237 12.2929 4.29289C11.9024 4.68342 11.9024 5.31658 12.2929 5.70711L13.7071 4.29289ZM2 1C2 0.447715 1.55228 0 1 0C0.447715 0 0 0.447715 0 1H2ZM0 17C0 17.5523 0.447715 18 1 18C1.55228 18 2 17.5523 2 17H0ZM17 8H7V10H17V8ZM16.2929 8.29289L12.2929 12.2929L13.7071 13.7071L17.7071 9.70711L16.2929 8.29289ZM17.7071 8.29289L13.7071 4.29289L12.2929 5.70711L16.2929 9.70711L17.7071 8.29289ZM0 1V17H2V1H0Z"
+            fill="#8B929A" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="page-content">
+    <header class="header">
+      <svg class="header__icon" width="22" height="21" viewBox="0 0 22 21" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M10.9998 16.75L11.466 15.8653C11.1745 15.7117 10.8261 15.7115 10.5345 15.8648L10.9998 16.75ZM4.82784 19.995L3.84223 19.8259C3.77787 20.2011 3.9321 20.5802 4.24005 20.804C4.548 21.0277 4.95628 21.0572 5.2932 20.8801L4.82784 19.995ZM6.00684 13.122L6.99244 13.291C7.04813 12.9664 6.94038 12.6351 6.70435 12.4054L6.00684 13.122ZM1.00684 8.25495L0.863407 7.26529C0.486509 7.31992 0.173355 7.58388 0.0557293 7.94609C-0.0618966 8.30831 0.0364276 8.70589 0.309324 8.97153L1.00684 8.25495ZM7.90684 7.25495L8.05026 8.24461C8.37612 8.19739 8.65785 7.99278 8.80357 7.69751L7.90684 7.25495ZM10.9928 1.00195L11.8896 0.559392C11.7211 0.218054 11.3735 0.00195312 10.9928 0.00195312C10.6122 0.00195312 10.2646 0.218054 10.0961 0.559392L10.9928 1.00195ZM14.0788 7.25495L13.1821 7.69751C13.3278 7.99278 13.6095 8.19739 13.9354 8.24461L14.0788 7.25495ZM20.9788 8.25495L21.6763 8.97153C21.9492 8.70589 22.0476 8.30831 21.9299 7.94609C21.8123 7.58388 21.4992 7.31992 21.1223 7.26529L20.9788 8.25495ZM15.9788 13.122L15.2813 12.4054C15.0453 12.6351 14.9375 12.9664 14.9932 13.291L15.9788 13.122ZM17.1578 19.995L16.6916 20.8796C17.0286 21.0572 17.437 21.0279 17.7452 20.8042C18.0534 20.5805 18.2078 20.2012 18.1434 19.8259L17.1578 19.995ZM10.5345 15.8648L4.36247 19.1098L5.2932 20.8801L11.4652 17.6351L10.5345 15.8648ZM5.81344 20.164L6.99244 13.291L5.02123 12.9529L3.84223 19.8259L5.81344 20.164ZM6.70435 12.4054L1.70435 7.53838L0.309324 8.97153L5.30932 13.8385L6.70435 12.4054ZM1.15027 9.24461L8.05026 8.24461L7.76341 6.26529L0.863407 7.26529L1.15027 9.24461ZM8.80357 7.69751L11.8896 1.44451L10.0961 0.559392L7.0101 6.81239L8.80357 7.69751ZM10.0961 1.44451L13.1821 7.69751L14.9756 6.81239L11.8896 0.559392L10.0961 1.44451ZM13.9354 8.24461L20.8354 9.24461L21.1223 7.26529L14.2223 6.26529L13.9354 8.24461ZM20.2813 7.53838L15.2813 12.4054L16.6763 13.8385L21.6763 8.97153L20.2813 7.53838ZM14.9932 13.291L16.1722 20.164L18.1434 19.8259L16.9644 12.9529L14.9932 13.291ZM17.624 19.1103L11.466 15.8653L10.5336 17.6346L16.6916 20.8796L17.624 19.1103Z"
+          fill="#8B929A" />
+      </svg>
+      <h1 class="header__heading-main u-typography-title-1">Nirvana</h1>
+    </header>
+
+    <div class="muso-banner u-border-radius-medium">
+      <img class="muso-banner__music-group-logo u-border-radius-medium" src="./assets/image/Review-image%2041.jpg"
+        alt="nirvana group banner">
+    </div>
+
+    <div class="about-group-box">
+      <div class="muso-main-info-section">
+        <article class="muso-main-info">
+          <h2 class="muso-main-info__header u-typography-title-2">About</h2>
+          <p class="muso-main-info__text u-typography-body-2 u-typography-body-2-regular">
+            Nirvana is one of the best-selling bands of all time, having sold
+            more than 75 million records worldwide. During their three years
+            as a mainstream act, Nirvana received an American Music Award,
+            Brit Award and Grammy Award, as well as seven MTV Video Music
+            Awards and two NME Awards.
+          </p>
+        </article>
+        <div class="muso-main-info-control">
+          <button class="btn--active btn--big">Book a Gig</button>
+          <div class="social">
+            <a href="#" class="social__link">
+              <svg class="socail__icon" width="13" height="20" viewBox="0 0 13 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M1 8V7C0.447715 7 0 7.44772 0 8H1ZM1 12H0C0 12.5523 0.447715 13 1 13L1 12ZM4 12H5C5 11.4477 4.55228 11 4 11V12ZM4 19H3C3 19.5523 3.44772 20 4 20V19ZM8 19V20C8.55228 20 9 19.5523 9 19H8ZM8 12V11C7.44772 11 7 11.4477 7 12H8ZM11 12V13C11.4589 13 11.8589 12.6877 11.9701 12.2425L11 12ZM12 8L12.9701 8.24254C13.0448 7.94379 12.9777 7.6273 12.7882 7.38459C12.5987 7.14187 12.3079 7 12 7V8ZM8 8H7C7 8.55228 7.44772 9 8 9V8ZM9 5V6V5ZM12 5V6C12.5523 6 13 5.55228 13 5H12ZM12 1H13C13 0.447715 12.5523 0 12 0V1ZM4 6H3H4ZM4 8V9C4.55228 9 5 8.55228 5 8H4ZM0 8V12H2V8H0ZM1 13H4V11H1V13ZM3 12V19H5V12H3ZM4 20H8V18H4V20ZM9 19V12H7V19H9ZM8 13H11V11H8V13ZM11.9701 12.2425L12.9701 8.24254L11.0299 7.75746L10.0299 11.7575L11.9701 12.2425ZM12 7H8V9H12V7ZM9 8V6H7V8H9ZM9 6L7.58579 4.58579C7.21071 4.96086 7 5.46957 7 6H9ZM9 6V4C8.46957 4 7.96086 4.21071 7.58579 4.58579L9 6ZM9 6H12V4H9V6ZM13 5V1H11V5H13ZM12 0H9V2H12V0ZM9 0C7.4087 0 5.88258 0.632141 4.75736 1.75736L6.17157 3.17157C6.92172 2.42143 7.93913 2 9 2V0ZM4.75736 1.75736C3.63214 2.88258 3 4.4087 3 6H5C5 4.93913 5.42143 3.92172 6.17157 3.17157L4.75736 1.75736ZM3 6V8H5V6H3ZM4 7H1V9H4V7Z"
+                  fill="#8B929A" />
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="socail__icon" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5 2H13V0H5V2ZM13 2C14.6569 2 16 3.34315 16 5H18C18 2.23858 15.7614 0 13 0V2ZM16 5V13H18V5H16ZM16 13C16 14.6569 14.6569 16 13 16V18C15.7614 18 18 15.7614 18 13H16ZM13 16H5V18H13V16ZM5 16C3.34315 16 2 14.6569 2 13H0C0 15.7614 2.23858 18 5 18V16ZM2 13V5H0V13H2ZM2 5C2 3.34315 3.34315 2 5 2V0C2.23858 0 0 2.23858 0 5H2ZM11 9C11 10.1046 10.1046 11 9 11V13C11.2091 13 13 11.2091 13 9H11ZM9 11C7.89543 11 7 10.1046 7 9H5C5 11.2091 6.79086 13 9 13V11ZM7 9C7 7.89543 7.89543 7 9 7V5C6.79086 5 5 6.79086 5 9H7ZM9 7C10.1046 7 11 7.89543 11 9H13C13 6.79086 11.2091 5 9 5V7Z"
+                  fill="#8B929A" />
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="socail__icon" width="20" height="16" viewBox="0 0 20 16" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8 5L8.5145 4.14251C8.20556 3.95715 7.82081 3.95229 7.5073 4.1298C7.19379 4.30731 7 4.63973 7 5H8ZM13 8L13.5145 8.85749C13.8157 8.67677 14 8.35126 14 8C14 7.64874 13.8157 7.32323 13.5145 7.14251L13 8ZM8 11H7C7 11.3603 7.19379 11.6927 7.5073 11.8702C7.82081 12.0477 8.20556 12.0429 8.5145 11.8575L8 11ZM5 2H15V0H5V2ZM15 2C16.6569 2 18 3.34315 18 5H20C20 2.23858 17.7614 0 15 0V2ZM18 5V11H20V5H18ZM18 11C18 12.6569 16.6569 14 15 14V16C17.7614 16 20 13.7614 20 11H18ZM15 14H5V16H15V14ZM5 14C3.34315 14 2 12.6569 2 11H0C0 13.7614 2.23858 16 5 16V14ZM2 11V5H0V11H2ZM2 5C2 3.34315 3.34315 2 5 2V0C2.23858 0 0 2.23858 0 5H2ZM7.4855 5.85749L12.4855 8.85749L13.5145 7.14251L8.5145 4.14251L7.4855 5.85749ZM12.4855 7.14251L7.4855 10.1425L8.5145 11.8575L13.5145 8.85749L12.4855 7.14251ZM9 11V5H7V11H9Z"
+                  fill="#8B929A" />
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="socail__icon" width="20" height="20" viewBox="0 0 20 20" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.49236 9.11133C5.01653 9.39169 4.85807 10.0047 5.13843 10.4805C5.41879 10.9564 6.03181 11.1148 6.50764 10.8345L5.49236 9.11133ZM12.9 11.2999C13.3418 11.6313 13.9686 11.5417 14.3 11.0999C14.6314 10.6581 14.5418 10.0313 14.1 9.6999L12.9 11.2999ZM6.4453 12.1681C5.98577 12.4745 5.8616 13.0953 6.16795 13.5549C6.4743 14.0144 7.09517 14.1386 7.5547 13.8322L6.4453 12.1681ZM11.1679 14.0549C11.4743 14.5144 12.0952 14.6386 12.5547 14.3322C13.0142 14.0259 13.1384 13.405 12.8321 12.9455L11.1679 14.0549ZM4.55279 6.10577C4.05881 6.35276 3.85858 6.95343 4.10557 7.44741C4.35256 7.94139 4.95324 8.14161 5.44721 7.89462L4.55279 6.10577ZM14.47 8.3482C14.9383 8.64091 15.5553 8.49853 15.848 8.0302C16.1407 7.56186 15.9983 6.94491 15.53 6.6522L14.47 8.3482ZM18 10C18 14.4183 14.4183 18 10 18V20C15.5228 20 20 15.5228 20 10H18ZM10 18C5.58172 18 2 14.4183 2 10H0C0 15.5228 4.47715 20 10 20V18ZM2 10C2 5.58172 5.58172 2 10 2V0C4.47715 0 0 4.47715 0 10H2ZM10 2C14.4183 2 18 5.58172 18 10H20C20 4.47715 15.5228 0 10 0V2ZM6.50764 10.8345C8.60374 9.59945 11.1675 10.0005 12.9 11.2999L14.1 9.6999C11.8325 7.9993 8.39626 7.40035 5.49236 9.11133L6.50764 10.8345ZM7.5547 13.8322C8.10798 13.4634 8.88635 13.2615 9.62098 13.3104C10.3576 13.3596 10.8932 13.6427 11.1679 14.0549L12.8321 12.9455C12.1068 11.8576 10.8924 11.3908 9.75402 11.3149C8.61365 11.2389 7.39202 11.537 6.4453 12.1681L7.5547 13.8322ZM5.44721 7.89462C7.25765 6.98941 10.8651 6.09515 14.47 8.3482L15.53 6.6522C11.1349 3.90525 6.74235 5.01099 4.55279 6.10577L5.44721 7.89462Z"
+                  fill="#8B929A" />
+              </svg>
+            </a>
+            <a href="#" class="social__link">
+              <svg class="socail__icon" width="20" height="12" viewBox="0 0 20 12" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M15 5L14.0194 5.19612C14.1129 5.66354 14.5233 6 15 6V5ZM10 11H9C9 11.5523 9.44771 12 10 12V11ZM10 1V0C9.44771 0 9 0.447715 9 1L10 1ZM8 2C8 1.44772 7.55228 1 7 1C6.44772 1 6 1.44772 6 2H8ZM6 11C6 11.5523 6.44772 12 7 12C7.55228 12 8 11.5523 8 11H6ZM3 11C3 11.5523 3.44772 12 4 12C4.55228 12 5 11.5523 5 11H3ZM5 4C5 3.44772 4.55228 3 4 3C3.44772 3 3 3.44772 3 4H5ZM0 10C0 10.5523 0.447715 11 1 11C1.55228 11 2 10.5523 2 10H0ZM2 8C2 7.44772 1.55228 7 1 7C0.447715 7 0 7.44772 0 8H2ZM15 6H16V4H15V6ZM16 6C16.4008 6 16.9163 6.19627 17.3384 6.58681C17.7496 6.9672 18 7.46391 18 8H20C20 6.81009 19.4404 5.8068 18.6966 5.11869C17.9637 4.44073 16.9792 4 16 4V6ZM18 8C18 9.07154 16.9815 10 16 10V12C18.0185 12 20 10.2425 20 8H18ZM16 10H10V12H16V10ZM11 11V1H9V11H11ZM10 2C11.3327 2 12.2062 2.33062 12.7916 2.82589C13.3812 3.32483 13.7987 4.09268 14.0194 5.19612L15.9806 4.80388C15.7013 3.40732 15.1188 2.17517 14.0834 1.29911C13.0438 0.419382 11.6673 0 10 0V2ZM6 2V11H8V2H6ZM5 11V4H3V11H5ZM2 10V8H0V10H2Z"
+                  fill="#8B929A" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <section class="muso-instagram-section">
+        <h2 class="muso-instagram-section__header u-typography-title-2">
+          Gallery
+        </h2>
+        <div class="muso-instagram-section__heading-box">
+          <div class="muso-instagram-logo--border">
+            <img class="muso-instagram-logo--border__logo-img" src="./assets/image/Review-image%2041.jpg"
+              alt="muso logo" width="43" height="43">
+          </div>
+          <h3 class="muso-instagram-username">nirvana_official</h3>
+          <svg class="instagram-check-mark" width="17" height="17" viewBox="0 0 17 17" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M8.5 0L10.3084 1.75108L12.75 1.13878L13.4406 3.55944L15.8612 4.25L15.2489 6.69163L17 8.5L15.2489 10.3084L15.8612 12.75L13.4406 13.4406L12.75 15.8612L10.3084 15.2489L8.5 17L6.69163 15.2489L4.25 15.8612L3.55944 13.4406L1.13878 12.75L1.75108 10.3084L0 8.5L1.75108 6.69163L1.13878 4.25L3.55944 3.55944L4.25 1.13878L6.69163 1.75108L8.5 0Z"
+              fill="#1F93ED" />
+            <path
+              d="M5.46359 8.25659C5.13798 8.00056 4.66647 8.05696 4.41044 8.38257C4.1544 8.70817 4.2108 9.17968 4.53641 9.43572L5.46359 8.25659ZM7.73913 11L7.27554 11.5896C7.56699 11.8187 7.98215 11.8006 8.25246 11.5468L7.73913 11ZM12.5133 7.5468C12.8153 7.2633 12.8303 6.78866 12.5468 6.48667C12.2633 6.18468 11.7887 6.16969 11.4867 6.4532L12.5133 7.5468ZM4.53641 9.43572L7.27554 11.5896L8.20272 10.4104L5.46359 8.25659L4.53641 9.43572ZM8.25246 11.5468L12.5133 7.5468L11.4867 6.4532L7.2258 10.4532L8.25246 11.5468Z"
+              fill="white" />
+          </svg>
+        </div>
+
+        <div class="muso-instagram-section-gallery">
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image"
+              src="./assets/image/Review-steve-halama-dfwFFQLvc0s-unsplash%201.jpg"
+              alt="music group image from instagram">
+            <svg class="muso-instagram-section-gallery__play-icon" width="21" height="24" viewBox="0 0 21 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_436_9137)">
+                <path
+                  d="M5.5241 2.93791C4.85783 2.52789 4 3.00724 4 3.78956V16.2104C4 16.9928 4.85783 17.4721 5.5241 17.0621L15.6161 10.8517C16.2506 10.4612 16.2506 9.53883 15.6161 9.14834L5.5241 2.93791Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter x="0" y="0.787979" width="20.0918" height="22.424" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_436_9137" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_436_9137" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image" src="./assets/image/Review-image%2043.jpg"
+              alt="music group image from instagram">
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image" src="./assets/image/Review-image%2045.jpg"
+              alt="music group image from instagram">
+            <svg class="muso-instagram-section-gallery__carousel-icon" width="23" height="23" viewBox="0 0 23 23"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_436_9145)">
+                <rect x="4" y="2" width="11.3791" height="11.3081" rx="2" fill="white" />
+                <path
+                  d="M19.0002 14.3891V5.85682C19.0002 5.42834 18.6528 5.08098 18.2243 5.08098C17.7958 5.08098 17.4485 5.42834 17.4485 5.85682V12.8471C17.4485 13.9516 16.553 14.8471 15.4485 14.8471H8.3921C7.96628 14.8471 7.62109 15.1923 7.62109 15.6181C7.62109 16.0439 7.96629 16.3891 8.3921 16.3891H17.0002C18.1047 16.3891 19.0002 15.4937 19.0002 14.3891Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter x="0" y="0" width="23" height="22.3891" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_436_9145" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_436_9145" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image" src="./assets/image/Review-image%2047.jpg"
+              alt="music group image from instagram">
+            <svg class="muso-instagram-section-gallery__carousel-icon" width="23" height="23" viewBox="0 0 23 23"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_436_9145)">
+                <rect x="4" y="2" width="11.3791" height="11.3081" rx="2" fill="white" />
+                <path
+                  d="M19.0002 14.3891V5.85682C19.0002 5.42834 18.6528 5.08098 18.2243 5.08098C17.7958 5.08098 17.4485 5.42834 17.4485 5.85682V12.8471C17.4485 13.9516 16.553 14.8471 15.4485 14.8471H8.3921C7.96628 14.8471 7.62109 15.1923 7.62109 15.6181C7.62109 16.0439 7.96629 16.3891 8.3921 16.3891H17.0002C18.1047 16.3891 19.0002 15.4937 19.0002 14.3891Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter x="0" y="0" width="23" height="22.3891" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_436_9145" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_436_9145" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image" src="./assets/image/Review-image%2046.jpg"
+              alt="music group image from instagram">
+            <svg class="muso-instagram-section-gallery__play-icon" width="21" height="24" viewBox="0 0 21 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_436_9137)">
+                <path
+                  d="M5.5241 2.93791C4.85783 2.52789 4 3.00724 4 3.78956V16.2104C4 16.9928 4.85783 17.4721 5.5241 17.0621L15.6161 10.8517C16.2506 10.4612 16.2506 9.53883 15.6161 9.14834L5.5241 2.93791Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter x="0" y="0.787979" width="20.0918" height="22.424" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_436_9137" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_436_9137" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image"
+              src="./assets/image/Review-jesus-santos-ZBBKk2-Cgf8-unsplash%202.jpg"
+              alt="music group image from instagram">
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image"
+              src="./assets/image/Review-grace-ho-zej4HPQLR5o-unsplash%201.jpg" alt="music group image from instagram">
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image" src="./assets/image/Review-image%2044.jpg"
+              alt="music group image from instagram">
+            <svg class="muso-instagram-section-gallery__play-icon" width="21" height="24" viewBox="0 0 21 24"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_d_436_9137)">
+                <path
+                  d="M5.5241 2.93791C4.85783 2.52789 4 3.00724 4 3.78956V16.2104C4 16.9928 4.85783 17.4721 5.5241 17.0621L15.6161 10.8517C16.2506 10.4612 16.2506 9.53883 15.6161 9.14834L5.5241 2.93791Z"
+                  fill="white" />
+              </g>
+              <defs>
+                <filter x="0" y="0.787979" width="20.0918" height="22.424" filterUnits="userSpaceOnUse"
+                  color-interpolation-filters="sRGB">
+                  <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha" />
+                  <feOffset dy="2" />
+                  <feGaussianBlur stdDeviation="2" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0" />
+                  <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_436_9137" />
+                  <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_436_9137" result="shape" />
+                </filter>
+              </defs>
+            </svg>
+          </div>
+
+          <div class="muso-instagram-section-gallery__image-box">
+            <img class="muso-instagram-section-gallery__image" src="./assets/image/Review-image%2048.jpg"
+              alt="music group image from instagram">
+          </div>
+        </div>
+      </section>
+
+      <section class="muso-details-section">
+        <h2 class="muso-details-section__header u-typography-title-2">
+          Muso Details
+        </h2>
+        <ul class="muso-details-section__list">
+          <li class="muso-details-section__list-element">
+            <span class="muso-details-section__detail-name u-typography-body-2 u-typography-body-2-semi-bold">Contact
+              Name</span>
+            <span class="muso-details__detail-value u-typography-body-2 u-typography-body-2-regular">Kurt
+              Cobain</span>
+          </li>
+
+          <li class="muso-details-section__list-element">
+            <span class="muso-details-section__detail-name u-typography-body-2 u-typography-body-2-semi-bold">Gig
+              Price (per hour)</span>
+            <span class="muso-details__detail-value u-typography-body-2 u-typography-body-2-regular">$50-150</span>
+          </li>
+
+          <li class="muso-details-section__list-element">
+            <span class="muso-details-section__detail-name u-typography-body-2 u-typography-body-2-semi-bold">ABN</span>
+            <span class="muso-details__detail-value u-typography-body-2 u-typography-body-2-regular">34 190
+              894 963</span>
+          </li>
+
+          <li class="muso-details-section__list-element">
+            <span class="muso-details-section__detail-name u-typography-body-2 u-typography-body-2-semi-bold">Bank
+              Details</span>
+            <span
+              class="muso-details__detail-value u-typography-body-2 u-typography-body-2-regular">40802840710000021339</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+
+</html>

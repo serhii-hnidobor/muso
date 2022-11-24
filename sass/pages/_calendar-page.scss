@@ -1,0 +1,49 @@
+.calendar-page {
+  @include default-page-body;
+  &-header {
+    @include flex-display-center;
+    justify-content: space-between;
+    margin-bottom: 2.1rem;
+  }
+  &__date-picker {
+    width: 19.6rem;
+    height: 4rem;
+    border: 1px solid $color-grey-light-1;
+    position: relative;
+    @include flex-display-center;
+    &__icon {
+      position: absolute;
+      top: 1.2rem;
+      cursor: pointer;
+      &--left {
+        left: 1.5rem;
+      }
+      &--right {
+        transform: rotate(180deg);
+        right: 1.5rem;
+      }
+    }
+  }
+}
+
+.calendar-page-content {
+  @include default-page-content-padding;
+}
+
+@include respond(tab-land) {
+  .calendar-page {
+    &-header {
+      flex-direction: column;
+      justify-content: center;
+      row-gap: 2rem;
+    }
+  }
+}
+
+@include respond(mobile) {
+  .calendar-page {
+    &-content {
+      padding: 3.2rem 1rem 5.3rem !important;
+    }
+  }
+}

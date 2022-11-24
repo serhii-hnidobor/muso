@@ -1,0 +1,14 @@
+.header {
+  display: flex;
+  align-items: center;
+  column-gap: 1.4rem;
+  padding-bottom: 2.4rem;
+  border-bottom: 1px solid $color-grey-light-1;
+  @include respond(mobile) {
+    justify-content: center;
+  }
+  &--without-border-and-icon {
+    display: initial;
+    border: none;
+  }
+}

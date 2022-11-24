@@ -1,0 +1,46 @@
+.btn {
+  border-radius: 6px;
+  @include btn-text;
+  width: 15.7rem;
+  height: 4rem;
+
+  &--small {
+    width: 15.7rem;
+    height: 4rem;
+    border-radius: 6px;
+  }
+
+  &--big {
+    width: 19.3rem;
+    height: 4.8rem;
+    border-radius: 6px;
+  }
+
+  &--active {
+    background-color: $color-coral;
+    color: $color-white;
+  }
+
+  &--disable {
+    background-color: $color-coral-light;
+    color: $color-white;
+  }
+
+  &--border--attention {
+    color: $color-red;
+    border: 1px solid $color-grey-light-1;
+    background: none;
+  }
+
+  &--border--active {
+    color: $color-coral;
+    border: 1px solid $color-coral;
+    background: none;
+  }
+
+  &--border--disable {
+    color: $color-coral-light;
+    border: 1px solid $color-coral-light;
+    background: none;
+  }
+}

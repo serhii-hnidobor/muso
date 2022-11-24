@@ -1,0 +1,140 @@
+.chat-section {
+  border-left: 1px solid $color-grey-light-1;
+  border-right: 1px solid $color-grey-light-1;
+  padding: 3.2rem 4.4rem;
+  background-color: $color-grey-light-3;
+  height: 100vh;
+  @include scrollbar($color-grey-light-3);
+}
+
+.chat {
+  &__message-box {
+    height: calc(100% - 11.508rem);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    padding-top: 2.4rem;
+    &__content-wrapper {
+      margin-top: auto;
+    }
+    @include scrollbar($color-grey-light-3);
+  }
+
+  &__info-message {
+    color: $color-grey-1;
+    text-align: center;
+    margin-bottom: 2.4rem;
+
+    &--long {
+      max-width: 31.4rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  &-message {
+    display: grid;
+    grid-template-columns: 2.4rem 1fr;
+    column-gap: 0.8rem;
+    margin-bottom: 2.4rem;
+    &__text {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+
+    &__text:last-child{
+      margin: 0;
+    }
+
+    &__file-box {
+      display: grid;
+      grid-template-columns: 4rem 1fr;
+      column-gap: 0.9rem;
+      &__file-info-box {
+        &__file-name:active,
+        &__file-name:visited {
+          color: $color-blue;
+        }
+        &__file-send-date {
+          color: $color-grey-2;
+        }
+      }
+    }
+
+    &__file-icon-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 4rem;
+      height: 4rem;
+      background-color: $color-grey-light-2;
+      border-radius: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 3.2rem;
+    }
+
+    &__avatar {
+      display: inline-block;
+      width: 2.4rem;
+      height: 2.4rem;
+      border-radius: 100%;
+      &--default {
+        @include default-avatar-text;
+        width: 2.4rem;
+        height: 2.4rem;
+        background-color: $color-grey-light-2;
+        border-radius: 100%;
+        font-size: 0.96rem;
+        line-height: 2.4rem;
+        text-align: center;
+      }
+    }
+    &__author-name {
+      text-align: left;
+      &--coral {
+        color: $color-coral;
+      }
+      &--green {
+        color: $color-green-dark;
+      }
+
+      margin-bottom: 0.4rem;
+    }
+    &__author-name:last-child {
+      margin: 0;
+    }
+    &__content {
+      width: fit-content;
+      max-width: 44.7rem;
+      display: inline-block;
+      padding: 0.8rem 1.2rem;
+      border-radius: 0.8rem;
+      background-color: $color-white;
+    }
+    &-this-user {
+      display: grid;
+      grid-template-columns: 1fr 2.4rem;
+      margin-left: auto;
+      &__content {
+        justify-self: end;
+        display: inline-block;
+        max-width: 44.7rem;
+        order: -1;
+        background: none;
+        border: 1px solid #d5dae0;
+      }
+      &__avatar {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+.chat-control-box {
+  &__input {
+    background-color: $color-white;
+  }
+}

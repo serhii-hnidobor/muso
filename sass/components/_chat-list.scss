@@ -1,0 +1,72 @@
+.chat-list-section {
+  width: 100%;
+  height: 100vh;
+  background-color: $color-white;
+  padding: 3.1rem 1.6rem;
+  overflow: auto;
+  &__search-input-box {
+    padding: 0 0.8rem;
+    margin-bottom: 1.6rem;
+  }
+  &__hr {
+    display: block;
+    background-color: $color-grey-light-1;
+    height: 1px;
+    border: none;
+  }
+  &__search-input {
+    margin-bottom: 1.9rem;
+  }
+}
+
+.chat-list-box {
+}
+
+.chat-list {
+  &-box {
+    &__hr {
+      margin: 2.4rem auto;
+      width: 94.4%;
+    }
+  }
+
+  &__chat-icon {
+    @include round-box;
+    background-color: $color-grey-light-2;
+    color: $color-black;
+    border: none;
+    @include default-avatar-text;
+    &--notify::after {
+      @include round-box-notify-after;
+    }
+  }
+  &__name {
+    text-align: left;
+    margin-bottom: 0.2rem;
+  }
+  &__element {
+    margin-bottom: 0.8rem;
+    border-radius: 0.8rem;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 1.6rem;
+  }
+}
+
+.future-event-chat-list {
+  &__element {
+    cursor: pointer;
+    &--active {
+      background-color: $color-grey-dark;
+      color: $color-white;
+    }
+  }
+}
+
+.complete-event-chat-list {
+  &__element {
+    color: $color-grey-1;
+  }
+}

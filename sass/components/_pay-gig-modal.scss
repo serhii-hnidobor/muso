@@ -1,0 +1,37 @@
+.pay-gig-modal {
+  @include modal-default;
+
+  &-container {
+    @include modal-container-default;
+  }
+
+  &-header {
+    @include modal-header-default;
+    margin-bottom: 4rem;
+  }
+
+  &-form {
+    &__label {
+      text-align: left;
+      margin-bottom: 0.4rem;
+    }
+    &__property-value {
+      margin-bottom: 2.4rem;
+    }
+  }
+
+  &__dropdown-label {
+    text-align: left;
+    margin-bottom: 1.2rem;
+  }
+  &__dropdown--subscription-box {
+    height: 4.8rem;
+    margin-bottom: 17rem;
+  }
+}
+
+@include respond(mobile) {
+  .pay-gig-modal {
+    @include modal-default-response;
+  }
+}
